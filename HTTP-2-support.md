@@ -34,6 +34,8 @@ In some cases, a tunnel may use a different TLS public key than the one used for
 1. Try the `--insecure` flag to skip the certificate check.
 2. If the connection succeeds using `--insecure`, please **open an Issue** on GitHub. This helps us identify which keys we should support natively in future updates.
 
+**Be aware that this is insecure though** and means that any rogue endpoint that understands the protocol can [MiTM](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) your traffic. Only do this on networks you trust.
+
 ---
 
 ### Why use hardcoded IPs?
